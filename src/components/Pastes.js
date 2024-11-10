@@ -84,7 +84,7 @@ const dispatch = useDispatch();
                 })
 
               }}  className='p-2 font-semibold bg-black-200 text-black rounded border hover:text-blue-200 transition-all duration-300'><Copy size={18}/></button>
-             <button onClick={handleShareClick}  className='p-2 font-semibold bg-black-200 text-black rounded border hover:text-yellow-200 transition-all duration-300'><Share size={18} /></button>
+             <button onClick={handleShareClick(paste?._id)}  className='p-2 font-semibold bg-black-200 text-black rounded border hover:text-yellow-200 transition-all duration-300'><Share size={18} /></button>
            
              </div> 
              <div className='flex  justify-end pt-2 text-sm'> <br/> <div className=' flex justify-evenly gap-1 p-1  max-w-fit bg-black-200'><Calendar size={20} />{formatDate(paste.createdAt)}</div></div> </div>
